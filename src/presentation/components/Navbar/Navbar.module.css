@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--background);
+  z-index: 10;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  font-weight: bold;
+
+  margin-left: 1.5rem;
+}
+
+.navItem:first-child {
+  margin-left: 0;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: #f0f0f0;
+}

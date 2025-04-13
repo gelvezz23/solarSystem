@@ -1,0 +1,21 @@
+.moon {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #d3d3d3;
+  box-shadow: 0 0 5px rgba(211, 211, 211, 0.8);
+  border-radius: 50%;
+}
+
+@keyframes orbit-moon {
+  from {
+    transform: rotate(0deg) translateX(15px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(15px) rotate(-360deg);
+  }
+}
+
+.animate-orbit-moon {
+  animation: orbit-moon 2s linear infinite;
+}

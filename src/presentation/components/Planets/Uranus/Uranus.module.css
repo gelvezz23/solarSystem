@@ -1,0 +1,33 @@
+.urano {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(320px) rotateZ(77.7deg);
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(to bottom, #add8e6, #87ceeb, #add8e6);
+  box-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  border: 1px solid #87ceeb;
+  border-radius: 50%;
+  z-index: 8;
+}
+
+.notSystem {
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
+}
+
+@keyframes orbit-urano {
+  from {
+    transform: rotate(0deg) translateX(320px) rotate(0deg) rotateZ(77.7deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(320px) rotate(-360deg) rotateZ(77.7deg);
+  }
+}
+
+.animateUrano {
+  animation: orbit-urano 300s linear infinite;
+}

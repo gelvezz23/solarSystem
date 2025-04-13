@@ -1,0 +1,32 @@
+.venus {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(90px);
+  width: 16px;
+  height: 16px;
+  background-color: #fdd017;
+  box-shadow: 0 0 10px rgba(253, 208, 23, 0.5);
+  z-index: 8;
+}
+
+.notSystem {
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
+}
+
+@keyframes orbit-venus {
+  from {
+    transform: rotate(0deg) translateX(90px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(90px) rotate(-360deg);
+  }
+}
+
+.animateVenus {
+  animation: orbit-venus 12s linear infinite;
+}

@@ -1,0 +1,40 @@
+.mercury {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #a9a9a9;
+  box-shadow: 0 0 8px rgba(169, 169, 169, 0.5);
+  z-index: 8;
+  transform: translate(-50%, -50%) translateX(60px);
+}
+.notSystem {
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
+}
+
+@keyframes orbit-mercury {
+  from {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+  }
+}
+
+@keyframes rotate-mars {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animateMercury {
+  animation: orbit-mercury 6s linear infinite;
+}

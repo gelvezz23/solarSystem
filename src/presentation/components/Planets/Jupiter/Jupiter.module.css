@@ -1,0 +1,32 @@
+.jupiter {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(210px);
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, #f5f5dc, #deb887, #f5f5dc);
+  box-shadow: 0 0 15px rgba(245, 245, 220, 0.7);
+  z-index: 8;
+}
+
+.notSystem {
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
+}
+
+@keyframes orbit-jupiter {
+  from {
+    transform: rotate(0deg) translateX(210px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(210px) rotate(-360deg);
+  }
+}
+
+.animateJupiter {
+  animation: orbit-jupiter 120s linear infinite;
+}

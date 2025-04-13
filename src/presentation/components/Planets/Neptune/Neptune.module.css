@@ -1,0 +1,33 @@
+.neptune {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(390px) rotateZ(28.3deg);
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(to bottom, #4169e1, #1e90ff, #4169e1);
+  box-shadow: 0 0 12px rgba(65, 105, 225, 0.7);
+  border: 1px solid #1e90ff;
+  border-radius: 50%;
+  z-index: 8;
+}
+
+.notSystem {
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
+}
+
+@keyframes orbit-neptuno {
+  from {
+    transform: rotate(0deg) translateX(390px) rotate(0deg) rotateZ(28.3deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(390px) rotate(-360deg) rotateZ(28.3deg);
+  }
+}
+
+.animateNeptune {
+  animation: orbit-neptuno 600s linear infinite;
+}

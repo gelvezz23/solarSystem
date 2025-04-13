@@ -1,0 +1,32 @@
+.pluto {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(360px) rotateZ(17deg);
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to bottom, #d3d3d3, #a9a9a9, #d3d3d3);
+  box-shadow: 0 0 5px rgba(211, 211, 211, 0.7);
+  border-radius: 50%;
+  z-index: 8;
+}
+.notSystem {
+  position: relative;
+  transform: none;
+  top: 0;
+  left: 0;
+}
+
+@keyframes orbit-pluton {
+  from {
+    transform: rotate(0deg) translateX(360px) rotate(0deg) rotateZ(17deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(360px) rotate(-360deg) rotateZ(17deg);
+  }
+}
+
+.animatePluto {
+  animation: orbit-pluton 900s linear infinite;
+}

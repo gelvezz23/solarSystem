@@ -1,43 +1,28 @@
-## sistema solar
-
-Este proyecto se realizo usando las siguientes tecnologias:
-
-```bash
-Node js v22.14.0
-
-npm v11.2.0
-
-Next js v15
-
-Tailwind v5
-
-Zustand v4
-```
-
-si deseas correr el proyecto con el comando
-
-```bash
-npm run dev
-```
-
-## Importante
-
-te puedes guiar por el archiv `.env.example` para crear tus variables de entrono
-
-```bash
-NEXT_PUBLIC_SOLAR_SYSTEM_API_BASE_URL= # URL DE LA API
-```
-
-Yo para este caso he usado esta [API](https://api.le-systeme-solaire.net/)
-Si necesitas mas informacion de la API por [swagger](https://api.le-systeme-solaire.net/swagger/)
-[github](https://github.com/systeme-solaire) de la API
-
-## Estructura de carpetas
-
-<details>
-  <summary>click para ver la estructura completa</summary>
-  
-```bash
+.
+├── README.md
+├── eslint.config.mjs
+├── folder_structure.txt
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── images
+│   │   ├── earth.jpg
+│   │   ├── jupiter.jpg
+│   │   ├── mars.jpg
+│   │   ├── mercury.jpg
+│   │   ├── neptune.jpg
+│   │   ├── pluto.jpg
+│   │   ├── saturn.jpg
+│   │   ├── uranus.jpg
+│   │   └── venus.jpg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
 ├── src
 │   ├── app
 │   │   ├── Loading.tsx
@@ -147,33 +132,5 @@ Si necesitas mas informacion de la API por [swagger](https://api.le-systeme-sola
 │               └── tablePlanets.module.css
 ├── tailwind.config.js
 └── tsconfig.json
-```
 
-</details>
-
-- Puedes ver la estructura completa en el archivo `folder_structure.txt`
-
-- **_public_** : uso para almacenar imagenes
-- **_src_** : codigo y logica del proyecto
-- **_app_** : manejo de rutas (este es obligatorio de Next JS v15)
-- **_config_** : Centralizacion de variables de entorno
-- **_entities_** : manejo de tipos como interfaces o types
-- **_Infrastructure_** : comunicacion con APIs externas como API de la Nasa o zustand
-- **_Presentation_** : Donde estan los componentes reutilizables, paginas y estilos
-
-## Server Components
-
-La page `PlanetDetails` es un server component por esta razon es asincrono y consume la informacion directa de el API
-
-## Arquitectura
-
-Implementacion de Clean Architecture para separar por capaz.
-
-- Aplication
-- Infrastructure
-- Presentation
-- Entities
-
-# zustand
-
-Cree un store en el cual se hacen las peticiones y se manejan los estados de error y carga globales
+41 directories, 93 files
