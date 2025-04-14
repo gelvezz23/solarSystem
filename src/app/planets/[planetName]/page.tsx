@@ -5,7 +5,7 @@ import PlanetsDetails from "@/presentation/screens/PlanetsDetails";
 const PlanetDetails = async ({
   params,
 }: {
-  params: { planetName: string };
+  params: Promise<{ planetName: string }>;
 }) => {
   const { planetName } = await params;
   const planetData = await getPlanetData(planetName);
