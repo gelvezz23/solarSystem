@@ -196,4 +196,6 @@ Cree un store en el cual se hacen las peticiones y se manejan los estados de err
 
 ![Captura de pantalla 2025-04-13 a la(s) 8 21 01 p m](https://github.com/user-attachments/assets/4895a411-04d7-4053-a6ba-5fcf8d3acf9e)
 
+![Captura de pantalla 2025-04-13 a la(s) 8 30 30 p m](https://github.com/user-attachments/assets/9ebbefe3-13b9-4912-8dbd-c18b2e0be838)
+
 
