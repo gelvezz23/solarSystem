@@ -1,5 +1,5 @@
 import React from "react";
-import usePlanetStore from "@/infrastructure/zustand/store/planetStore"; // Adjust the path
+import usePlanetStore from "@/infrastructure/zustand/store/planetStore";
 import SortAZ from "../Icons/sortAZ";
 import SortZA from "../Icons/sortZA";
 import SearchIcon from "../Icons/search";
