@@ -186,3 +186,14 @@ Cree un store en el cual se hacen las peticiones y se manejan los estados de err
 - **_searchPlanets_**: recibe un nombre para buscar en los planetas;
 - **_sortPlanetsAlphabetically_**: ordena por orden alfabetico;
 - **_setCurrentPage_**: recibe una pagina y modifica la pagina en la que estamos;
+- 
+
+# Vista
+
+![Captura de pantalla 2025-04-13 a la(s) 8 19 20 p m](https://github.com/user-attachments/assets/c8e9c451-c126-4df8-9c91-2e7c94f3fdf6)
+
+![Captura de pantalla 2025-04-13 a la(s) 8 20 28 p m](https://github.com/user-attachments/assets/57d09c33-4e76-48c8-b854-5817aa191093)
+
+![Captura de pantalla 2025-04-13 a la(s) 8 21 01 p m](https://github.com/user-attachments/assets/4895a411-04d7-4053-a6ba-5fcf8d3acf9e)
+
+
