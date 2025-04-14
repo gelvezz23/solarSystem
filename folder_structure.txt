@@ -33,6 +33,7 @@
 │   │   ├── favicon.ico
 │   │   ├── globals.css
 │   │   ├── layout.tsx
+│   │   ├── not-found.tsx
 │   │   ├── page.tsx
 │   │   └── planets
 │   │       ├── [planetName]
@@ -59,6 +60,12 @@
 │       │   ├── Card
 │       │   │   ├── Card.tsx
 │       │   │   └── index.ts
+│       │   ├── FloatingButton
+│       │   │   └── index.tsx
+│       │   ├── Icons
+│       │   │   ├── search.tsx
+│       │   │   ├── sortAZ.tsx
+│       │   │   └── sortZA.tsx
 │       │   ├── Loading
 │       │   │   ├── Loading.tsx
 │       │   │   └── index.ts
@@ -114,6 +121,16 @@
 │       │   │   │   ├── Venus.tsx
 │       │   │   │   └── index.ts
 │       │   │   └── index.ts
+│       │   ├── RenderPages
+│       │   │   ├── RenderPages.tsx
+│       │   │   └── index.ts
+│       │   ├── ResultPlanets
+│       │   │   ├── ResultPlanets.tsx
+│       │   │   └── index.ts
+│       │   ├── Search
+│       │   │   ├── Results.tsx
+│       │   │   ├── Search.tsx
+│       │   │   └── index.ts
 │       │   └── Sun
 │       │       ├── Sun.module.css
 │       │       ├── Sun.tsx
@@ -133,4 +150,4 @@
 ├── tailwind.config.js
 └── tsconfig.json
 
-41 directories, 93 files
+46 directories, 105 files

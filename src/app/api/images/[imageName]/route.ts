@@ -4,7 +4,7 @@ import fs from "fs/promises";
 import { NextResponse } from "next/server";
 
 export async function GET(request: any, { params }: any) {
-  const { imageName } = params;
+  const { imageName } = await params;
   const imagePath = path.join(process.cwd(), "public", "images", imageName);
 
   try {

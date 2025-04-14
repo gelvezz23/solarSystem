@@ -7,8 +7,7 @@ const PlanetDetails = async ({
 }: {
   params: { planetName: string };
 }) => {
-  const { planetName } = params;
-
+  const { planetName } = await params;
   const planetData = await getPlanetData(planetName);
   if (!planetData) {
     return <Loading />;

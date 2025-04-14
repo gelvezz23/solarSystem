@@ -151,6 +151,8 @@ Si necesitas mas informacion de la API por [swagger](https://api.le-systeme-sola
 
 </details>
 
+---
+
 - Puedes ver la estructura completa en el archivo `folder_structure.txt`
 
 - **_public_** : uso para almacenar imagenes
@@ -177,3 +179,10 @@ Implementacion de Clean Architecture para separar por capaz.
 # zustand
 
 Cree un store en el cual se hacen las peticiones y se manejan los estados de error y carga globales
+
+- **_fetchPlanets_**: se comunica con la API y trae los planetas para alimentar el estado global.
+- **_fetchPlanetDetails_**: busca dentro del estado el planeta seleccionado.
+- **_setSearchTerm_**: Alimenta el estado de el nombre del planeta que estamos buscando.
+- **_searchPlanets_**: recibe un nombre para buscar en los planetas;
+- **_sortPlanetsAlphabetically_**: ordena por orden alfabetico;
+- **_setCurrentPage_**: recibe una pagina y modifica la pagina en la que estamos;
